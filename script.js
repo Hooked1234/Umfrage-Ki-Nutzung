@@ -65,6 +65,7 @@ form.addEventListener("submit", (e) => {
 
   fetch(SHEET_URL, {
     method: "POST",
+    mode: "no-cors",
     body: JSON.stringify(data),
   })
     .then(() => {
