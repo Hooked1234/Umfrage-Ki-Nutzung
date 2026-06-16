@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KI in unserer Abteilung – Umfrage</title>
+  <meta name="description" content="Kurze Umfrage zu Wissen und Nutzung von Künstlicher Intelligenz in unserer Abteilung." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Progress -->
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="hero reveal">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span>Interne Umfrage · ca. 5 Minuten</p>
+      <h1>Wissen &amp; Nutzung von<br /><em>Künstlicher Intelligenz</em><br />in unserer Abteilung</h1>
+      <p class="lede">
+        Künstliche Intelligenz verändert unsere Arbeitswelt – und bietet großes Potenzial, den Alltag
+        einfacher und effizienter zu gestalten. Diese kurze Umfrage zeigt uns, wie vertraut ihr bereits
+        mit KI-Tools seid und wo ihr euch Unterstützung wünscht. Eure Antworten helfen uns,
+        <strong>passgenaue Schulungen</strong> zu planen, die wirklich weiterbringen. Es gibt keine richtigen
+        oder falschen Antworten – ehrlich ist am wertvollsten. Vielen Dank fürs Mitmachen!
+      </p>
+      <div class="hero-meta">
+        <span><strong>8</strong> Fragen</span>
+        <span><strong>Anonym</strong> auswertbar</span>
+        <span>Zielgruppe: <strong>alle Mitarbeitenden</strong></span>
+      </div>
+      <a href="#frage-1" class="cta">Umfrage starten ↓</a>
+    </div>
+  </header>
+
+  <main class="wrap" id="form">
+    <form id="surveyForm" novalidate>
+
+      <!-- SECTION 1 -->
+      <p class="section-label reveal">Teil 1 · Aktuelle Nutzung von KI-Tools</p>
+
+      <!-- Q1 -->
+      <fieldset class="q reveal" id="frage-1">
+        <legend><span class="qnum">01</span> Wie häufig nutzt du aktuell KI-Tools (z.&nbsp;B. ChatGPT, Copilot) in deinem Arbeitsalltag?</legend>
+        <p class="hint">Eine Antwort</p>
+        <div class="options">
+          <label class="opt"><input type="radio" name="q1" value="Täglich" /><span>Täglich</span></label>
+          <label class="opt"><input type="radio" name="q1" value="Mehrmals pro Woche" /><span>Mehrmals pro Woche</span></label>
+          <label class="opt"><input type="radio" name="q1" value="Gelegentlich" /><span>Gelegentlich (einige Male im Monat)</span></label>
+          <label class="opt"><input type="radio" name="q1" value="Selten" /><span>Selten</span></label>
+          <label class="opt"><input type="radio" name="q1" value="Noch nie" /><span>Noch nie</span></label>
+        </div>
+      </fieldset>
+
+      <!-- Q2 -->
+      <fieldset class="q reveal" id="frage-2">
+        <legend><span class="qnum">02</span> Welche KI-Tools hast du bereits genutzt?</legend>
+        <p class="hint">Mehrfachauswahl möglich</p>
+        <div class="options">
+          <label class="opt"><input type="checkbox" name="q2" value="Textgeneratoren" /><span>Textgeneratoren (ChatGPT, Gemini, Copilot Chat)</span></label>
+          <label class="opt"><input type="checkbox" name="q2" value="Bildgeneratoren" /><span>Bildgeneratoren (DALL·E, Midjourney)</span></label>
+          <label class="opt"><input type="checkbox" name="q2" value="Office-KI" /><span>KI-Funktionen in Office (Microsoft 365 Copilot)</span></label>
+          <label class="opt"><input type="checkbox" name="q2" value="Übersetzung" /><span>KI-gestützte Übersetzung (DeepL)</span></label>
+          <label class="opt"><input type="checkbox" name="q2" value="Code-Assistenten" /><span>Programmier-/Code-Assistenten (GitHub Copilot)</span></label>
+          <label class="opt"><input type="checkbox" name="q2" value="Keine" /><span>Noch keine</span></label>
+        </div>
+      </fieldset>
+
+      <!-- Q3 -->
+      <fieldset class="q reveal" id="frage-3">
+        <legend><span class="qnum">03</span> Für welche Aufgaben setzt du KI bereits ein?</legend>
+        <p class="hint">Mehrfachauswahl möglich</p>
+        <div class="options">
+          <label class="opt"><input type="checkbox" name="q3" value="Texte schreiben" /><span>Texte schreiben oder überarbeiten</span></label>
+          <label class="opt"><input type="checkbox" name="q3" value="Recherche" /><span>Informationen recherchieren &amp; zusammenfassen</span></label>
+          <label class="opt"><input type="checkbox" name="q3" value="Ideen" /><span>Ideen entwickeln / Brainstorming</span></label>
+          <label class="opt"><input type="checkbox" name="q3" value="Datenanalyse" /><span>Daten analysieren oder auswerten</span></label>
+          <label class="opt"><input type="checkbox" name="q3" value="Kommunikation" /><span>E-Mails &amp; Kommunikation</span></label>
+          <label class="opt"><input type="checkbox" name="q3" value="Übersetzungen" /><span>Übersetzungen</span></label>
+          <label class="opt"><input type="checkbox" name="q3" value="Gar nicht" /><span>Bisher gar nicht</span></label>
+        </div>
+      </fieldset>
+
+      <!-- SECTION 2 -->
+      <p class="section-label reveal">Teil 2 · Selbsteinschätzung deines Wissensstands</p>
+
+      <!-- Q4 -->
+      <fieldset class="q reveal" id="frage-4">
+        <legend><span class="qnum">04</span> Wie schätzt du dein allgemeines Wissen über Künstliche Intelligenz ein?</legend>
+        <p class="hint">1 = sehr gering · 5 = sehr gut</p>
+        <div class="scale" data-name="q4">
+          <label class="scale-pt"><input type="radio" name="q4" value="1" /><span class="num">1</span></label>
+          <label class="scale-pt"><input type="radio" name="q4" value="2" /><span class="num">2</span></label>
+          <label class="scale-pt"><input type="radio" name="q4" value="3" /><span class="num">3</span></label>
+          <label class="scale-pt"><input type="radio" name="q4" value="4" /><span class="num">4</span></label>
+          <label class="scale-pt"><input type="radio" name="q4" value="5" /><span class="num">5</span></label>
+        </div>
+        <div class="scale-legend"><span>sehr gering</span><span>sehr gut</span></div>
+      </fieldset>
+
+      <!-- Q5 -->
+      <fieldset class="q reveal" id="frage-5">
+        <legend><span class="qnum">05</span> Wie sicher fühlst du dich, KI-Tools praktisch und sinnvoll für deine Arbeit einzusetzen?</legend>
+        <p class="hint">1 = sehr unsicher · 5 = sehr sicher</p>
+        <div class="scale" data-name="q5">
+          <label class="scale-pt"><input type="radio" name="q5" value="1" /><span class="num">1</span></label>
+          <label class="scale-pt"><input type="radio" name="q5" value="2" /><span class="num">2</span></label>
+          <label class="scale-pt"><input type="radio" name="q5" value="3" /><span class="num">3</span></label>
+          <label class="scale-pt"><input type="radio" name="q5" value="4" /><span class="num">4</span></label>
+          <label class="scale-pt"><input type="radio" name="q5" value="5" /><span class="num">5</span></label>
+        </div>
+        <div class="scale-legend"><span>sehr unsicher</span><span>sehr sicher</span></div>
+      </fieldset>
+
+      <!-- SECTION 3 -->
+      <p class="section-label reveal">Teil 3 · Herausforderungen &amp; Wünsche</p>
+
+      <!-- Q6 -->
+      <fieldset class="q reveal" id="frage-6">
+        <legend><span class="qnum">06</span> Welche Herausforderungen oder Unsicherheiten begegnen dir aktuell beim Thema KI?</legend>
+        <p class="hint">z.&nbsp;B. Bedienung, Datenschutz, Qualität der Ergebnisse · Freitext</p>
+        <textarea name="q6" rows="4" placeholder="Deine Antwort …"></textarea>
+      </fieldset>
+
+      <!-- Q7 -->
+      <fieldset class="q reveal" id="frage-7">
+        <legend><span class="qnum">07</span> Wo würdest du dir konkret mehr Unterstützung oder Wissen rund um KI wünschen?</legend>
+        <p class="hint">Bereiche oder Aufgaben · Freitext</p>
+        <textarea name="q7" rows="4" placeholder="Deine Antwort …"></textarea>
+      </fieldset>
+
+      <!-- SECTION 4 -->
+      <p class="section-label reveal">Teil 4 · Bevorzugte Lernformate</p>
+
+      <!-- Q8 -->
+      <fieldset class="q reveal" id="frage-8">
+        <legend><span class="qnum">08</span> Wie möchtest du am liebsten Neues über KI lernen?</legend>
+        <p class="hint">Mehrfachauswahl möglich</p>
+        <div class="options">
+          <label class="opt"><input type="checkbox" name="q8" value="Präsenz-Workshop" /><span>Präsenz-Workshop in der Abteilung</span></label>
+          <label class="opt"><input type="checkbox" name="q8" value="Online-Webinar" /><span>Online-Webinar / Live-Schulung</span></label>
+          <label class="opt"><input type="checkbox" name="q8" value="Video-Tutorials" /><span>Kurze Video-Tutorials zum Selbstlernen</span></label>
+          <label class="opt"><input type="checkbox" name="q8" value="Anleitungen" /><span>Schriftliche Anleitungen / Cheat-Sheets</span></label>
+          <label class="opt"><input type="checkbox" name="q8" value="Hands-on" /><span>Praxisnahe „Hands-on“-Sessions mit eigenen Aufgaben</span></label>
+          <label class="opt"><input type="checkbox" name="q8" value="Peer-Learning" /><span>Kollegialer Austausch / Peer-Learning</span></label>
+        </div>
+      </fieldset>
+
+      <div class="submit-row reveal">
+        <button type="submit" class="cta solid">Antworten absenden</button>
+        <p class="privacy">Deine Angaben werden vertraulich und ausschließlich zur Schulungsplanung verwendet.</p>
+      </div>
+    </form>
+
+    <!-- Thank-you -->
+    <div class="thanks" id="thanks" hidden>
+      <div class="check">✓</div>
+      <h2>Danke für deine Teilnahme!</h2>
+      <p>Deine Antworten helfen uns, gezielte KI-Schulungen für die Abteilung zu planen.</p>
+      <button type="button" class="cta ghost" id="restart">Antworten zurücksetzen</button>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <p>KI-Bedarfsanalyse · Personal- &amp; Organisationsentwicklung</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
