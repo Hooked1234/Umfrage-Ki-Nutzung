@@ -8,319 +8,182 @@
 
 ## Inhalt
 
-1. [Recherche & Zusammenfassen](#1-recherche--zusammenfassen) ← am häufigsten genutzt (83 %)
+1. [Recherche & Zusammenfassen](#1-recherche--zusammenfassen) (83 %)
 2. [Ideen & Brainstorming](#2-ideen--brainstorming) (67 %)
 3. [Übersetzungen](#3-übersetzungen) (67 %)
 4. [Texte schreiben & überarbeiten](#4-texte-schreiben--überarbeiten) (50 %)
 5. [E-Mail & Kommunikation](#5-e-mail--kommunikation) (33 %)
 6. [Datenanalyse & Auswertung](#6-datenanalyse--auswertung) (33 %)
-7. [Tipps für bessere Ergebnisse (Prompting)](#7-tipps-für-bessere-ergebnisse-prompting)
-8. [Schnell-Referenz: Prompt-Vorlagen](#8-schnell-referenz-prompt-vorlagen)
+7. [EOS-spezifische Use Cases](#7-eos-spezifische-use-cases)
+8. [Prompting in 3 Prinzipien](#8-prompting-in-3-prinzipien)
+9. [Schnell-Referenz: Prompt-Vorlagen](#9-schnell-referenz-prompt-vorlagen)
+
+> Prozentangaben = Anteil der Befragten, die diesen Bereich nutzen.
 
 ---
 
 ## 1. Recherche & Zusammenfassen
 
-**Am häufigsten genutzter Einsatzbereich – 5 von 6 Befragten.**
-
-### Wofür?
-- Themen schnell verstehen ohne stundenlange Lektüre
-- Lange Dokumente auf das Wesentliche kürzen
-- Definitionen und Konzepte einfach erklärt bekommen
-
-### Beispiel-Prompts
-
 ```
-"Erkläre mir in 5 Sätzen, was [Fachbegriff] bedeutet –
- so, dass jemand ohne Vorkenntnisse es versteht."
+"Erkläre [Fachbegriff] in 5 Sätzen, verständlich ohne Vorkenntnisse."
+```
+```
+"Fasse die wichtigsten Punkte in Stichpunkten zusammen: [Text ohne sensible Daten]"
+```
+```
+"Was sind die 3 wichtigsten Unterschiede zwischen [A] und [B]?"
 ```
 
-```
-"Fasse die wichtigsten Punkte dieses Textes in Stichpunkten zusammen:
-[Text einfügen – ohne personenbezogene oder vertrauliche Daten]"
-```
-
-```
-"Was sind die 3 wichtigsten Unterschiede zwischen [Konzept A] und [Konzept B]?"
-```
-
-```
-"Ich möchte [Thema] verstehen. Erkläre es mir schrittweise,
- beginnend mit den Grundlagen."
-```
-
-### Datenschutz-Hinweis
-✅ Für öffentlich zugängliche Texte und allgemeine Recherchen unproblematisch.  
-❌ Keine internen Dokumente mit Kundenbezug oder vertraulichen Zahlen einfügen.
-
-### Tipp aus der Praxis
-Wenn du einen langen Text zusammenfassen möchtest: Teile ihn in Abschnitte auf oder verwende **Microsoft 365 Copilot** – dort bleiben die Daten im M365-Tenant.
+🔒 Nur öffentliche/allgemeine Texte. Für interne Dokumente → **M365 Copilot** (Daten bleiben im Tenant).
 
 ---
 
 ## 2. Ideen & Brainstorming
 
-**67 % der Befragten nutzen KI für Ideen und kreative Aufgaben.**
-
-### Wofür?
-- Themen für Präsentationen oder Meetings entwickeln
-- Kreative Blockaden überwinden
-- Strukturierungsvorschläge für Berichte oder Konzepte
-
-### Beispiel-Prompts
-
 ```
-"Gib mir 10 Ideen für [Thema/Aufgabe]. Ich brauche sowohl kreative
- als auch pragmatische Ansätze."
+"Gib mir 10 Ideen für [Thema] – kreativ und pragmatisch gemischt."
+```
+```
+"Schlage eine Gliederung für eine interne Präsentation zu [Thema] vor."
+```
+```
+"Welche 8 Fragen könnte das Publikum nach einem Vortrag zu [Thema] stellen?"
 ```
 
-```
-"Ich möchte eine interne Präsentation zu [Thema] halten.
- Schlage mir eine sinnvolle Gliederung vor."
-```
-
-```
-"Welche Fragen könnte das Publikum nach einem Vortrag zu [Thema] stellen?
- Liste die häufigsten 8 Fragen auf."
-```
-
-```
-"Ich möchte [Ziel] erreichen. Welche Wege gibt es dafür?
- Vergleiche die Vor- und Nachteile von mindestens 3 Optionen."
-```
-
-### Datenschutz-Hinweis
-✅ Brainstorming mit allgemeinen Themen ist vollständig unbedenklich.  
-⚠️ Keine vertraulichen Projektdetails, Kundennamen oder Budgetzahlen nennen.
-
-### Tipp aus der Praxis
-KI-Ideen als **Inspiration, nicht als finale Antwort** verstehen. Lass die KI 10–15 Optionen generieren und wähle selbst aus. Oft ist die beste Idee eine Mischung aus KI-Vorschlag und eigenem Wissen.
+🔒 Allgemeine Themen unbedenklich. Keine vertraulichen Projektdetails oder Zahlen nennen.
 
 ---
 
 ## 3. Übersetzungen
 
-**67 % nutzen KI für Übersetzungen – DeepL ist dabei das meistgenutzte Tool.**
-
-### Wofür?
-- Texte schnell und qualitativ hochwertig übersetzen
-- Formulierungen in Fremdsprachen prüfen
-- E-Mails oder Dokumente in andere Sprachen übertragen
-
-### Empfohlene Tools
-| Tool | Wann nutzen? |
-|------|-------------|
-| **DeepL Business** | Interne Texte, E-Mails, Anleitungen – mit Datenschutzvertrag |
-| **Microsoft 365 Copilot** | Übersetzung innerhalb von Word/Outlook – Daten bleiben intern |
-| **DeepL Free** | Nur für nicht-sensible, öffentliche Texte |
-
-### Beispiel-Prompts (für ChatGPT/Copilot Chat)
+| Tool | Wann |
+|------|------|
+| **DeepL Business** / **M365 Copilot** | Interne Texte, auch mit Personenbezug (AVV vorhanden) |
+| **DeepL Free / ChatGPT** | Nur nicht-sensible, öffentliche Texte |
 
 ```
-"Übersetze diesen Text ins Englische und achte dabei auf einen
- professionellen, formellen Ton:
-[Text ohne Kundendaten oder vertrauliche Inhalte]"
+"Übersetze ins Englische, professioneller, formeller Ton: [Text ohne sensible Daten]"
+```
+```
+"Englischer Fachbegriff für [Wort/Konzept]? Gib 2 Alternativen."
 ```
 
-```
-"Wie lautet der englische Fachbegriff für [deutsches Wort/Konzept]?
- Gib mir auch 2 Alternativformulierungen."
-```
-
-```
-"Prüfe diesen englischen Text auf grammatikalische Fehler und
- natürliche Formulierungen: [Text]"
-```
-
-### Datenschutz-Hinweis
-✅ Allgemeine Korrespondenz, interne Anleitungen ohne Personenbezug: unproblematisch.  
-❌ Kundenbriefe mit echten Namen/Daten: nur über DeepL Business oder M365 Copilot.
+🔒 Kundenbriefe mit echten Daten nur über DeepL Business / M365 Copilot.
 
 ---
 
 ## 4. Texte schreiben & überarbeiten
 
-**50 % nutzen KI zum Schreiben und Überarbeiten von Texten.**
-
-### Wofür?
-- Rohentwürfe erstellen lassen und dann verfeinern
-- Texte kürzen, vereinfachen oder umformulieren
-- Professionellere Formulierungen finden
-
-### Beispiel-Prompts
-
 ```
-"Schreibe einen professionellen Einleitungsabsatz für ein Dokument
- zum Thema [Thema]. Ton: sachlich, klar, direkt."
+"Schreibe einen sachlichen Einleitungsabsatz zum Thema [Thema]."
+```
+```
+"Kürze diesen Text auf max. [X] Wörter, ohne Kerninfos zu verlieren: [Text]"
+```
+```
+"Formuliere professioneller um: '[Satz]'"
 ```
 
-```
-"Überarbeite diesen Text. Mache ihn kürzer (max. [X] Wörter),
- ohne wichtige Informationen zu verlieren:
-[Text einfügen]"
-```
-
-```
-"Dieser Satz klingt unnatürlich. Formuliere ihn professioneller um:
-'[Satz]'"
-```
-
-```
-"Schreibe einen Text in [einfacher Sprache / für Fachpublikum /
- für interne Kommunikation] über [Thema]."
-```
-
-### Datenschutz-Hinweis
-✅ Strukturhilfe, Formulierungshilfe, allgemeine Texte: unproblematisch.  
-⚠️ Bei Texten mit echten Personennamen oder Kundendaten: Platzhalter verwenden.
-
-### Tipp aus der Praxis
-Nutze KI als **Co-Autor, nicht als Ghostwriter**. Den KI-Entwurf als Rohversion nehmen, eigene Expertise und Kontext einbauen. Das Ergebnis ist besser als reines KI-Output – und du bleibst verantwortlich.
+🔒 Bei echten Namen/Kundendaten: Platzhalter verwenden. KI ist Co-Autor – Inhalt selbst verantworten.
 
 ---
 
 ## 5. E-Mail & Kommunikation
 
-**33 % nutzen KI für E-Mails und interne Kommunikation.**
-
-### Wofür?
-- Schwierige E-Mails formulieren (Absagen, Eskalationen, heikle Nachrichten)
-- Tonprüfung – klingt die Mail zu harsch? Zu weich?
-- Antwortvorlagen für häufig wiederkehrende Anfragen
-
-### Beispiel-Prompts
-
 ```
-"Schreibe eine höfliche aber klare Absage-E-Mail für folgende Situation:
-[Situation allgemein beschreiben, ohne echte Namen]"
+"Schreibe eine höfliche, klare Absage für: [Situation ohne echte Namen]"
+```
+```
+"Ist der Ton dieser E-Mail angemessen? Was würdest du ändern? [Text ohne echte Daten]"
+```
+```
+"Erstelle eine E-Mail-Vorlage für [Anfrageart] mit [X] Platzhaltern."
 ```
 
-```
-"Lies diese E-Mail und sag mir, ob der Ton angemessen ist.
- Falls nicht: Was würdest du ändern?
-[E-Mail-Text ohne echte Namen/Firmendaten]"
-```
-
-```
-"Ich muss jemandem mitteilen, dass [allgemeine Situation].
- Schreibe eine kurze, professionelle E-Mail dafür."
-```
-
-```
-"Erstelle eine E-Mail-Vorlage für [häufig wiederkehrende Anfrageart],
- mit [X] Platzhaltern zum Ausfüllen."
-```
-
-### Datenschutz-Hinweis
-✅ Vorlage mit fiktiver Situation erstellen → danach real ausfüllen: ✅ erlaubt.  
-❌ Echte Kundenkommunikation (Name, Unternehmen, Kontonummer) direkt eingeben: ❌ verboten.
-
-### Tipp aus der Praxis
-**„Ersatz-Personen" nutzen:** Statt „Frau Müller von der Firma ABC" → „eine Kundin, die über Vertragslaufzeit verärgert ist". Die KI liefert trotzdem eine passende Vorlage.
+🔒 **Ersatz-Personen nutzen:** Statt „Frau Müller, Firma ABC" → „eine verärgerte Kundin zur Vertragslaufzeit".
 
 ---
 
 ## 6. Datenanalyse & Auswertung
 
-**33 % nutzen KI für Datenanalyse – mit steigendem Potenzial.**
-
-### Wofür?
-- Strukturierung und Interpretation von Ergebnissen
-- Diagrammbeschreibungen und Erkenntnisformulierung
-- Auswertungskonzepte entwickeln
-
-### Beispiel-Prompts
-
 ```
-"Ich habe folgende Ergebnisse [anonymisierte/aggregierte Zahlen].
- Was sind die auffälligsten Muster? Welche Fragen würden sich daraus ergeben?"
+"Welche Muster fallen auf? [aggregierte/anonymisierte Zahlen]"
+```
+```
+"Erstelle eine Vergleichstabelle für [Aspekte] nach Kategorien: [Liste]"
+```
+```
+"Welche Visualisierung passt zu [Datenart] und warum?"
 ```
 
-```
-"Erstelle mir eine Tabelle, die [X] Aspekte vergleicht.
- Nutze folgende Kategorien: [Liste]"
-```
-
-```
-"Erkläre mir, wie ich [Methode / Kennzahl] richtig interpretiere."
-```
-
-```
-"Welche Visualisierungsform wäre für [Datenart] am sinnvollsten und warum?"
-```
-
-### Datenschutz-Hinweis
-⚠️ **Besondere Vorsicht:** Keine echten Kundenzahlen, Umsatzdaten oder Mitarbeiterdaten eingeben.  
-✅ **Erlaubt:** Aggregierte, anonymisierte oder fiktive Beispieldaten für Konzeptarbeit.  
-✅ Fragen zur Methodik, Auswertungslogik oder Visualisierung ohne echte Daten: problemlos.
-
-### Tipp aus der Praxis
-**Microsoft 365 Copilot in Excel** ist hier die sicherere Wahl für echte interne Daten – die Analyse findet innerhalb des M365-Tenants statt.
+🔒 Keine echten Kunden-/Umsatz-/Mitarbeiterdaten. Für echte interne Daten → **M365 Copilot in Excel**.
 
 ---
 
-## 7. Tipps für bessere Ergebnisse (Prompting)
+## 7. EOS-spezifische Use Cases
 
-Gute Eingaben → bessere Ergebnisse. Diese 5 Prinzipien helfen:
+Beispiele mit Bezug zum Finanzdienstleistungs-/Forderungskontext – **immer anonymisiert** (siehe [Datenschutz-Guide](./ki-datenschutz-guide.md)).
 
-### 🎯 1. Kontext geben
-Sag der KI, wer du bist und warum du fragst.
+**Forderungs-/Inkassokommunikation (entschärft formulieren):**
 ```
-"Ich arbeite in einer Finanzabteilung und muss eine Präsentation für
- Führungskräfte vorbereiten. Hilf mir dabei, ..."
-```
-
-### 📐 2. Format vorgeben
-Sag, wie du die Antwort haben möchtest.
-```
-"Antworte in Stichpunkten." / "Schreibe maximal 3 Sätze." /
-"Erstelle eine Tabelle mit 3 Spalten."
+"Formuliere eine verständliche, wertschätzende Zahlungserinnerung für eine
+fiktive Privatperson in finanzieller Notlage. Ton: respektvoll, lösungsorientiert."
 ```
 
-### 🔁 3. Nachfragen & verfeinern
-Der erste Entwurf ist selten perfekt – das ist normal.
+**Regulatorik & Compliance verstehen:**
 ```
-"Das ist gut, aber zu lang. Kürze es auf die Hälfte."
-"Mach den Ton etwas freundlicher."
-"Füge ein konkretes Beispiel hinzu."
+"Erkläre DSGVO Art. 22 (automatisierte Entscheidungen) in einfachen Worten
+mit einem Beispiel aus dem Forderungsmanagement."
 ```
-
-### 🎭 4. Rolle zuweisen
 ```
-"Du bist ein erfahrener Kommunikationsprofi. Überarbeite diese E-Mail..."
-"Agiere als kritischer Leser und sage mir, was unklar ist."
+"Was ändert sich durch den EU AI Act für Finanzdienstleister? Stichpunkte."
 ```
 
-### ⛔ 5. Grenzen setzen
+**Prozess- & Konzeptarbeit:**
 ```
-"Antworte nur auf Basis der Informationen, die ich dir gebe.
- Erfinde nichts."
-"Falls du es nicht weißt, sage es explizit."
+"Strukturiere eine Checkliste für [internen Prozess] – ohne echte Daten,
+nur Ablaufschritte."
+```
+
+🔒 **Hochsensibel:** Bonitäts-/Scoring-Daten und echte Schuldnerdaten gehören **nie** in öffentliche KI-Tools.
+
+---
+
+## 8. Prompting in 3 Prinzipien
+
+**1. Kontext geben** – wer du bist, wofür:
+```
+"Ich arbeite im Forderungsmanagement und bereite eine Schulung vor. Hilf mir..."
+```
+
+**2. Format vorgeben** – wie die Antwort aussehen soll:
+```
+"Antworte in max. 5 Stichpunkten." / "Erstelle eine Tabelle mit 3 Spalten."
+```
+
+**3. Nachschärfen** – der erste Entwurf ist selten perfekt:
+```
+"Kürzer." / "Freundlicherer Ton." / "Füge ein konkretes Beispiel hinzu."
 ```
 
 ---
 
-## 8. Schnell-Referenz: Prompt-Vorlagen
+## 9. Schnell-Referenz: Prompt-Vorlagen
 
-Zum Ausdrucken oder Speichern – direkt einsetzbar:
-
-| Aufgabe | Prompt-Vorlage |
-|---------|---------------|
-| Zusammenfassung | `"Fasse diesen Text in [X] Stichpunkten zusammen: [Text]"` |
-| E-Mail-Entwurf | `"Schreibe eine [formelle/freundliche] E-Mail zu folgendem Anlass: [Situation]"` |
-| Überarbeitung | `"Überarbeite diesen Text: kürzer, klarer, professioneller: [Text]"` |
+| Aufgabe | Vorlage |
+|---------|---------|
+| Zusammenfassung | `"Fasse in [X] Stichpunkten zusammen: [Text]"` |
+| E-Mail | `"Schreibe eine [formelle/freundliche] E-Mail zu: [Situation]"` |
+| Überarbeitung | `"Kürzer, klarer, professioneller: [Text]"` |
 | Übersetzung | `"Übersetze ins [Sprache], professioneller Ton: [Text]"` |
-| Brainstorming | `"Gib mir 8 Ideen für [Thema/Aufgabe]"` |
-| Erklärung | `"Erkläre [Begriff/Konzept] in einfachen Worten – ohne Fachbegriffe"` |
-| Toncheck | `"Ist der Ton dieser E-Mail angemessen? Was würdest du ändern? [E-Mail]"` |
-| Strukturvorschlag | `"Schlage eine sinnvolle Gliederung für [Dokument/Präsentation] vor"` |
-| FAQ erstellen | `"Erstelle 6 häufige Fragen und Antworten zum Thema [Thema]"` |
-| Vergleich | `"Vergleiche [A] und [B] in einer Tabelle nach folgenden Kriterien: [Liste]"` |
+| Brainstorming | `"Gib mir 8 Ideen für [Thema]"` |
+| Erklärung | `"Erkläre [Begriff] einfach, ohne Fachjargon"` |
+| Toncheck | `"Ist der Ton angemessen? Was ändern? [E-Mail]"` |
+| Gliederung | `"Schlage eine Gliederung für [Dokument] vor"` |
+| Vergleich | `"Vergleiche [A] und [B] in einer Tabelle nach: [Kriterien]"` |
 
 ---
 
-> 📄 Diese Use-Case-Sammlung basiert auf der internen KI-Umfrage vom Juni 2026.  
-> Die häufigsten Einsatzbereiche der Befragten bilden die Kapitelstruktur.  
-> Neue Use Cases können kontinuierlich ergänzt werden.  
-> Datenschutzregeln: → [ki-datenschutz-guide.md](./ki-datenschutz-guide.md)  
-> Stand: Juni 2026 · Erstellt auf Basis der Auswertungsergebnisse der Abteilungsumfrage.
+> 📄 Basis: interne KI-Umfrage (Juni 2026). Kapitel = häufigste Einsatzbereiche der Befragten.
+> Weitere KI-Lernpfade gruppenweit über **Otto Group LXHub / TechUcation**.
+> Datenschutzregeln: → [ki-datenschutz-guide.md](./ki-datenschutz-guide.md) · Stand: Juni 2026.

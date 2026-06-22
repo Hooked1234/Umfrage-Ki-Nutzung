@@ -1,144 +1,131 @@
-# 🔒 KI-Nutzung in der Abteilung – Datenschutz & Richtlinien
+# 🔒 KI-Nutzung – Datenschutz & Richtlinien
 
-> **Grundlage:** Dieser Guide entstand auf Basis einer internen Umfrage (Juni 2026).  
-> Datenschutz wurde von **3 von 6 Befragten** als häufigste Unsicherheit beim KI-Einsatz genannt.  
-> Ziel dieses Dokuments: Klare Orientierung geben – was ist erlaubt, was nicht, und warum.
+> **Grundlage:** Interne Umfrage Juni 2026 – Datenschutz war die meistgenannte Hürde (3 von 6).
+>
+> ⚠️ **Wichtiger Hinweis zum Status:** EOS hat (Stand Juni 2026) **keine öffentlich auffindbare KI-Richtlinie oder Acceptable-Use-Policy**. Dieser Guide ist eine **Orientierungshilfe** auf Basis der öffentlichen EOS-DSGVO-Informationen, des Otto-Group-CDR-Rahmens und des EU AI Act – **keine verbindliche Freigabe**. Verbindliche Regeln gibt nur IT / Compliance / Datenschutz.
 
 ---
 
 ## Inhalt
 
-1. [Warum dieser Guide?](#warum-dieser-guide)
-2. [Grundprinzip: Was darf rein – was nicht?](#grundprinzip)
-3. [Verbotene Eingaben](#verbotene-eingaben)
-4. [Zulässige Eingaben](#zulässige-eingaben)
-5. [Welche Tools dürfen genutzt werden?](#welche-tools-dürfen-genutzt-werden)
-6. [Wie gehe ich mit KI-Ergebnissen um?](#wie-gehe-ich-mit-ki-ergebnissen-um)
-7. [Häufige Fragen (FAQ)](#häufige-fragen-faq)
-8. [Bei Unsicherheiten: An wen wende ich mich?](#bei-unsicherheiten)
+1. [Die 3 Grundregeln](#die-3-grundregeln)
+2. [Was nie in KI-Tools darf](#was-nie-in-ki-tools-darf)
+3. [Was unbedenklich ist](#was-unbedenklich-ist)
+4. [Tools – Orientierung (keine offizielle Freigabe)](#tools--orientierung-keine-offizielle-freigabe)
+5. [Rechtlicher Pflichtrahmen](#rechtlicher-pflichtrahmen)
+6. [Umgang mit KI-Ergebnissen](#umgang-mit-ki-ergebnissen)
+7. [FAQ](#faq)
+8. [Ansprechpartner](#ansprechpartner)
 
 ---
 
-## Warum dieser Guide?
+## Die 3 Grundregeln
 
-KI-Tools wie ChatGPT, Microsoft Copilot oder DeepL bieten echten Mehrwert im Arbeitsalltag –  
-aber sie funktionieren oft über externe Server. Das bedeutet: **Was dort eingegeben wird, verlässt potenziell das Unternehmen.**
+1. **Keine echten Personen- oder Kundendaten** in öffentliche KI-Tools – immer Platzhalter.
+2. **Verantwortung bleibt bei dir** – jede KI-Ausgabe vor Verwendung prüfen.
+3. **Im Zweifel nicht eingeben** – kurz bei Datenschutz/Compliance nachfragen.
 
-Unsere Umfrage zeigt: Die größte Hürde bei der KI-Nutzung ist **nicht fehlendes Wissen über die Tools selbst**, sondern **Unsicherheit darüber, was erlaubt ist und welche Daten eingegeben werden dürfen**.
-
-Dieser Guide gibt klare Antworten – direkt umsetzbar, ohne langes Nachfragen.
-
----
-
-## Grundprinzip
-
-> 🧭 **Faustregel: Würdest du diese Information auch einem externen Dienstleister unverschlüsselt per E-Mail schicken? Wenn nein → nicht in KI-Tools eingeben.**
-
-KI-Chattools wie ChatGPT (ohne Enterprise-Abo) oder öffentliche Bildgeneratoren **trainieren sich potenziell auf eingegebene Daten** oder speichern Anfragen. Selbst wenn kein Training stattfindet: Daten verlassen das Unternehmensnetzwerk.
+> 🧭 **Faustregel:** Würdest du es einem externen Dienstleister unverschlüsselt mailen? Nein → nicht eingeben.
 
 ---
 
-## Verbotene Eingaben
+## Was nie in KI-Tools darf
 
-Die folgenden Datenkategorien dürfen **unter keinen Umständen** in öffentliche KI-Tools eingegeben werden:
+Als Finanzdienstleister verarbeitet EOS besonders schützenswerte Daten. Die folgenden Kategorien (abgeleitet aus der **öffentlichen EOS-DSGVO-Informationspflicht**) gehören **nicht** in öffentliche KI-Tools:
 
 | ❌ Kategorie | Beispiele |
 |-------------|-----------|
-| **Kundendaten** | Namen, Adressen, Kundennummern, Kontodaten, Kommunikationshistorie |
-| **Personenbezogene Daten (DSGVO)** | Name + Adresse, Geburtsdatum, Krankheitsdaten, HR-Daten von Kolleg:innen |
-| **Vertrauliche Unternehmensdaten** | Strategiepapiere, Budgetzahlen, Vertragsdetails, Preiskalkulationen |
-| **Interne Systeminformationen** | Passwörter, API-Keys, interne URLs, Systemarchitektur |
-| **Rechtlich sensible Informationen** | Laufende Verhandlungen, Compliance-Vorgänge, juristische Schriftsätze |
-| **Nicht-öffentliche Finanzdaten** | Quartalszahlen vor Veröffentlichung, interne Forecasts |
+| **Stamm- & Adressdaten** | Namen, Anschriften von Schuldner:innen, Kund:innen, Kolleg:innen |
+| **Vertragsdaten** | Forderungen, Vertragsdetails, Aktenzeichen |
+| **Bank- & Zahlungsverkehrsdaten** | Kontonummern, Zahlungshistorie, Mahnstände |
+| **Kommunikationsdaten** | Schriftverkehr, Telefonnotizen mit Personenbezug |
+| **Bonitäts- & Scoring-Daten** | Bewertungen einzelner Personen → besonders sensibel ([Art. 22 DSGVO](#rechtlicher-pflichtrahmen)) |
+| **Interne Unternehmensdaten** | Strategie, Forecasts, Preiskalkulation, nicht-veröffentlichte Zahlen |
+| **Zugangsdaten** | Passwörter, API-Keys, interne URLs/Systeminfos |
 
-> ⚠️ **Auch anonymisierte Daten können problematisch sein**, wenn durch Kombination mehrerer Felder Rückschlüsse auf Personen möglich sind.
-
----
-
-## Zulässige Eingaben
-
-Diese Inhalte können **grundsätzlich** in KI-Tools eingegeben werden:
-
-| ✅ Kategorie | Beispiele |
-|-------------|-----------|
-| **Allgemeine Textentwürfe** | Struktur eines Briefes, Gliederung einer Präsentation, Formulierungshilfe |
-| **Fiktive Beispielsituationen** | „Schreibe eine E-Mail, in der ein Kunde nach dem Status fragt" – ohne echte Kundendaten |
-| **Recherchefragen** | „Was ist der Unterschied zwischen DSGVO-Artikel 6 und Artikel 9?" |
-| **Sprachliche Überarbeitung** | Texte korrigieren, kürzen, umformulieren – solange keine sensiblen Inhalte enthalten sind |
-| **Öffentlich bekannte Informationen** | Newszusammenfassungen, allgemeine Fachfragen |
-| **Brainstorming & Kreativaufgaben** | Ideen entwickeln, Überschriften, Konzeptentwürfe |
-| **Übersetzungen von nicht-sensiblen Texten** | Allgemeine Korrespondenz, interne Anleitungen ohne Kundenbezug |
-
-> 💡 **Tipp:** Ersetze echte Daten durch Platzhalter. Statt „Kunde Müller, Konto 12345" → „ein Privatkunde, Vertragsnummer XYZ". Das Ergebnis ist genauso nützlich.
+> ⚠️ Auch **anonymisierte** Daten können re-identifizierbar sein, wenn mehrere Felder kombiniert werden.
 
 ---
 
-## Welche Tools dürfen genutzt werden?
+## Was unbedenklich ist
 
-> 🏢 **Dieser Abschnitt muss unternehmensspezifisch bestätigt werden.**  
-> Die folgende Tabelle zeigt eine allgemeine Einschätzung – die verbindlichen Freigaben bitte mit **IT / Compliance** abstimmen.
+| ✅ Erlaubt | Beispiel |
+|-----------|----------|
+| Allgemeine Entwürfe & Gliederungen | Struktur eines Berichts, Präsentationsaufbau |
+| Fiktive Beispielsituationen | „E-Mail an eine Kundin, die nach dem Status fragt" – ohne echte Daten |
+| Recherche zu öffentlichen Themen | „Unterschied DSGVO Art. 6 und Art. 9?" |
+| Sprachliche Überarbeitung | Texte ohne sensiblen Inhalt korrigieren/kürzen |
+| Übersetzung nicht-sensibler Texte | Interne Anleitungen ohne Personenbezug |
 
-| Tool | Status | Hinweise |
-|------|--------|----------|
-| **Microsoft 365 Copilot** | ✅ Intern bevorzugt | Daten bleiben im M365-Tenant des Unternehmens. Für Arbeitsdaten empfohlen. |
-| **DeepL (kostenpflichtig / Business)** | ✅ In der Regel zulässig | Business-Abos mit Datenschutzzusage. Kostenlose Version: keine Garantie. |
-| **ChatGPT (privates Konto)** | ⚠️ Nur für unkritische Inhalte | Kein Unternehmensvertrag → keine Datenschutzgarantie. Nur für allgemeine Anfragen. |
-| **ChatGPT Enterprise / Copilot for Work** | ✅ Je nach Unternehmensvertrag | Prüfen, ob Unternehmensvertrag besteht. |
-| **GitHub Copilot** | ✅ Für Entwickler | Nur mit aktivem Unternehmens-Abonnement und Code-Review. |
-| **Bildgeneratoren (DALL·E, Midjourney)** | ⚠️ Einzelfallprüfung | Keine sensiblen Inhalte, keine Markenlogos ohne Prüfung, kein Copyright-Risiko. |
-
-> 📌 **Frage an IT/Compliance:** Welche Tools sind offiziell für welche Verwendungszwecke freigegeben?
+> 💡 **Platzhalter-Trick:** Statt „Kunde Müller, Konto 12345" → „ein Privatkunde, Vertragsnr. XYZ". Ergebnis bleibt gleich nützlich.
 
 ---
 
-## Wie gehe ich mit KI-Ergebnissen um?
+## Tools – Orientierung (keine offizielle Freigabe)
 
-KI-Tools können **halluzinieren** – sie erfinden überzeugend klingende, aber falsche Informationen.
+> ⚠️ **Es existiert keine veröffentlichte EOS-Tool-Freigabeliste.** Die Tabelle ist eine **Risikoeinschätzung**, keine verbindliche Erlaubnis. Verbindlich erst nach Bestätigung durch IT/Compliance.
 
-**Pflicht beim Einsatz von KI im Arbeitskontext:**
-
-- [ ] **Ergebnisse prüfen:** Niemals KI-Ausgaben ungeprüft verwenden – insbesondere bei Zahlen, Zitaten, Rechtsfragen, Kundenkommunikation.
-- [ ] **Quellen verifizieren:** KI nennt Quellen, die manchmal nicht existieren → immer selbst nachschlagen.
-- [ ] **Verantwortung bleibt beim Menschen:** Du bist verantwortlich für alles, was du unter deinem Namen versendest – egal ob von KI generiert.
-- [ ] **Kennzeichnungspflicht beachten:** Gibt es interne Vorgaben, ob KI-generierte Inhalte als solche markiert werden müssen? → mit Vorgesetzten klären.
-
----
-
-## Häufige Fragen (FAQ)
-
-**F: Darf ich ChatGPT für E-Mails an Kunden nutzen?**  
-A: Ja – wenn du keine echten Kundendaten eingibst. Schreibe die Vorlage mit fiktiven Platzhaltern und fülle sie danach manuell aus. Prüfe das Ergebnis vor dem Versand kritisch.
-
-**F: Ich möchte einen Kundenbrief von DeepL übersetzen lassen. Erlaubt?**  
-A: Nur mit der Business-Version (Datenschutzvertrag vorhanden). Mit dem kostenlosen DeepL: ❌ Kundendaten raus, Übersetzung ggf. nur für interne Texte ohne Personenbezug.
-
-**F: Was passiert, wenn ich versehentlich Kundendaten eingegeben habe?**  
-A: Sofort melden – an Vorgesetzte und/oder den Datenschutzbeauftragten. Manche Tools bieten an, den Chat-Verlauf zu löschen (z. B. ChatGPT: Einstellungen → Datenkontrolle). Dokumentiere, was eingegeben wurde.
-
-**F: Darf ich KI zur Vorbereitung von Meetings nutzen?**  
-A: Ja. Zusammenfassungen, Agendaentwürfe, Gesprächsleitfäden mit allgemeinen Themen sind unproblematisch. Keine vertraulichen Inhalte aus laufenden Projekten eingeben.
-
-**F: Darf ich KI-generierte Bilder in offiziellen Unterlagen verwenden?**  
-A: Vorsicht: Urheberrechtsfragen, Markenpolitik und interne Designstandards sind zu beachten. Für offizielle externe Dokumente: vorher mit Marketing/Compliance klären.
-
-**F: Gibt es eine Liste genehmigter Prompts oder Vorlagen?**  
-A: Noch nicht – aber genau dafür gibt es unsere [Use-Case-Sammlung](./ki-use-cases.md). Diese wächst kontinuierlich.
+| Tool | Datenschutz-Risiko | Hinweis |
+|------|--------------------|---------|
+| **Microsoft 365 Copilot** | 🟢 Niedrig | Daten bleiben im EU-/M365-Tenant. Für interne Arbeitsdaten die sicherste Option. |
+| **DeepL Business** | 🟢 Niedrig | Mit Datenschutzvertrag (AVV). Kostenlose Version: keine Garantie. |
+| **ChatGPT Enterprise / Copilot for Work** | 🟡 Mittel | Nur wenn Unternehmensvertrag besteht – intern prüfen. |
+| **GitHub Copilot** | 🟡 Mittel | Nur mit Unternehmens-Abo + Code-Review. |
+| **ChatGPT (privates Konto)** | 🔴 Hoch | Keine Datenschutzgarantie → nur unkritische, allgemeine Inhalte. |
+| **Bildgeneratoren (DALL·E, Midjourney)** | 🔴 Hoch | Einzelfallprüfung: Urheberrecht, keine sensiblen Inhalte. |
 
 ---
 
-## Bei Unsicherheiten
+## Rechtlicher Pflichtrahmen
 
-Wenn du unsicher bist, ob eine Nutzung in Ordnung ist:
+Diese Punkte sind **keine Empfehlung, sondern geltendes Recht** – besonders relevant für EOS als Finanzdienstleister:
 
-1. **Haltepunkt-Frage:** Würde ich das auch an einen externen Dienstleister mailen?
-2. **Faustregel für Daten:** Lieber einmal zu vorsichtig als zu risikofreudig.
-3. **Ansprechpartner:**
-   - IT-Abteilung: Fragen zu freigegebenen Tools
-   - Datenschutzbeauftragter: Fragen zu DSGVO und Datenkategorien
-   - Vorgesetzte: Unklarheiten zu Richtlinien
+- **AI-Literacy-Pflicht (EU AI Act, seit 02.02.2025 in Kraft):** Wer KI beruflich nutzt, muss ausreichend geschult sein. Das ist eine **Arbeitgeberpflicht** – Schulungen wie diese Umfrage-Maßnahme sind also Pflichterfüllung, nicht „nice to have".
+- **DSGVO Art. 22 – automatisierte Entscheidungen:** Rein automatisierte Entscheidungen mit erheblicher Wirkung auf Personen (z. B. Scoring, Forderungsbewertung) sind **ohne menschliche Prüfung unzulässig**. Direkt relevant, sobald KI in Schuldner-/Kundenprozesse einfließt.
+- **Transparenzpflicht (EU AI Act, ab 08/2026):** KI-Chatbots und KI-generierte Inhalte müssen **als KI erkennbar** sein.
+- **High-Risk-Kontext (ab 12/2027):** Das EOS-Kerngeschäft (Scoring, Bonitätsbewertung) fällt voraussichtlich unter **„Hochrisiko-KI"** → strenge Pflichten zu Dokumentation, Logging und menschlicher Aufsicht.
+
+> 📌 *Datenbasis vs. Interpretation:* Die DSGVO-Datenkategorien stammen aus der öffentlichen EOS-Information. Die EU-AI-Act-Einordnung als „Hochrisiko" ist eine **fachliche Interpretation** des Gesetzestextes – die finale Einstufung trifft EOS Compliance.
 
 ---
 
-> 📄 Dieses Dokument basiert auf der internen KI-Umfrage vom Juni 2026.  
-> Es stellt eine Orientierungshilfe dar und ersetzt keine verbindlichen Unternehmensrichtlinien.  
-> Stand: Juni 2026 · Erstellt auf Basis der Auswertungsergebnisse der Abteilungsumfrage.
+## Umgang mit KI-Ergebnissen
+
+KI **halluziniert** – sie erfindet überzeugend klingende, falsche Inhalte. Pflicht im Arbeitskontext:
+
+- [ ] **Prüfen:** Zahlen, Zitate, Rechtsaussagen nie ungeprüft übernehmen.
+- [ ] **Quellen verifizieren:** KI erfindet teils nicht-existente Quellen.
+- [ ] **Verantwortung:** Du haftest für alles unter deinem Namen – auch KI-Output.
+- [ ] **Kennzeichnung:** KI-generierte Inhalte ggf. als solche markieren (EU AI Act, ab 08/2026).
+
+---
+
+## FAQ
+
+**Versehentlich echte Kundendaten eingegeben – was tun?**
+Sofort an Datenschutz/Vorgesetzte melden, Chat-Verlauf wo möglich löschen (z. B. ChatGPT → Einstellungen → Datenkontrolle), Vorfall dokumentieren.
+
+**Darf ich KI für Kunden-E-Mails oder Forderungsschreiben nutzen?**
+Ja, aber nur als Vorlage mit fiktiven Platzhaltern – echte Namen/Konto-/Vertragsdaten erst danach manuell einfügen. Ergebnis vor Versand prüfen.
+
+**Kundenbrief mit DeepL übersetzen?**
+Nur mit DeepL Business (AVV) oder M365 Copilot. Kostenloses DeepL: keine echten Personendaten.
+
+**Gibt es genehmigte Tools/Prompts?**
+Offizielle EOS-Freigabeliste ist nicht öffentlich → bei IT/Compliance erfragen. Prompt-Vorlagen: → [Use-Case-Sammlung](./ki-use-cases.md).
+
+---
+
+## Ansprechpartner
+
+| Anliegen | Kontakt |
+|----------|---------|
+| Datenschutz / DSGVO / Datenpanne | EOS-Datenschutz: **datenschutz@eos-group.eu** |
+| Aufsichtsbehörde | Hamburgischer Beauftragter für Datenschutz und Informationsfreiheit |
+| Tool-Freigaben | IT / Compliance |
+| KI-Lernpfade (gruppenweit) | Otto Group **LXHub / TechUcation** |
+
+---
+
+> 📄 Orientierungshilfe auf Basis der internen KI-Umfrage (Juni 2026), der öffentlichen EOS-DSGVO-Informationen, des Otto-Group-CDR-Rahmens und des EU AI Act.
+> **Ersetzt keine verbindlichen EOS-Richtlinien.** Datenbasis, Interpretation und Annahmen sind im Text gekennzeichnet. Stand: Juni 2026.

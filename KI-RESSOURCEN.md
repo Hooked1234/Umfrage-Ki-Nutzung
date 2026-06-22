@@ -50,4 +50,18 @@ Die wichtigsten Erkenntnisse im Überblick:
 
 ---
 
+## Rahmen & Quellen
+
+> ⚠️ **Status:** EOS hat (Stand Juni 2026) **keine öffentlich auffindbare KI-Richtlinie / Acceptable-Use-Policy**. Die Dokumente sind Orientierungshilfen, keine verbindlichen Freigaben.
+
+Eingearbeitete Grundlagen:
+- **EOS-DSGVO-Informationspflichten** (öffentlich) → konkrete Datenkategorien
+- **DSGVO Art. 22** → automatisierte Entscheidungen (Scoring-Kontext)
+- **EU AI Act** → AI-Literacy-Pflicht (seit 02/2025), Transparenz (ab 08/2026), High-Risk Finanzdienstleistung (ab 12/2027)
+- **Otto Group CDR / LXHub / TechUcation** → ethischer Rahmen & gruppenweite KI-Lernpfade
+
+> 📌 Datenbasis, Interpretation und Annahmen sind in den Dokumenten gekennzeichnet.
+
+---
+
 > Stand: Juni 2026 · Erstellt auf Basis der internen KI-Nutzungsumfrage
