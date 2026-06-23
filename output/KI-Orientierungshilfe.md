@@ -20,12 +20,14 @@ quelle: Interne KI-Nutzungsumfrage Juni 2026 (n=6)
 3. [Das Wichtigste in 60 Sekunden](#3-das-wichtigste-in-60-sekunden)
 4. [Was KI im Arbeitsalltag leisten kann](#4-was-ki-im-arbeitsalltag-leisten-kann)
 5. [Datenschutz-Ampel: Was darf rein, was nicht?](#5-datenschutz-ampel-was-darf-rein-was-nicht)
-6. [Typische Use Cases aus der Abteilung](#6-typische-use-cases-aus-der-abteilung)
-7. [Prompting einfach erklärt](#7-prompting-einfach-erklärt)
-8. [Prompt-Vorlagen zum Kopieren](#8-prompt-vorlagen-zum-kopieren)
-9. [KI-Ergebnisse prüfen: Checkliste](#9-ki-ergebnisse-prüfen-checkliste)
-10. [Grenzen, offene Fragen und Ansprechpartner](#10-grenzen-offene-fragen-und-ansprechpartner)
-11. [Quellen- und Statushinweis](#11-quellen--und-statushinweis)
+6. [Quellenbasierte Leitprinzipien (DSK)](#6-quellenbasierte-leitprinzipien-dsk)
+7. [Mini-Risiko-Check vor KI-Nutzung](#7-mini-risiko-check-vor-ki-nutzung)
+8. [Typische Use Cases aus der Abteilung](#8-typische-use-cases-aus-der-abteilung)
+9. [Prompting einfach erklärt](#9-prompting-einfach-erklärt)
+10. [Prompt-Vorlagen zum Kopieren](#10-prompt-vorlagen-zum-kopieren)
+11. [KI-Ergebnisse prüfen: Checkliste](#11-ki-ergebnisse-prüfen-checkliste)
+12. [Grenzen, offene Fragen und Ansprechpartner](#12-grenzen-offene-fragen-und-ansprechpartner)
+13. [Quellen- und Statushinweis](#13-quellen--und-statushinweis)
 
 ---
 
@@ -53,6 +55,8 @@ Im Juni 2026 haben wir eine kurze interne Umfrage zur KI-Nutzung durchgeführt (
 - **Datenschutz** wurde **3-mal** ausdrücklich als größte Hürde genannt – das mit Abstand häufigste Thema.
 
 > 📌 **Kernerkenntnis:** Das Wissen ist da, aber das *Vertrauen in die sichere Anwendung* fehlt. Genau deshalb steht Datenschutz in diesem Dokument vorne.
+
+> 🎓 **Bezug zum EU AI Act:** Dieses Dokument unterstützt die im EU AI Act geforderte KI-Kompetenz („AI Literacy", Art. 4, gilt seit 02.02.2025). Es ersetzt keine Schulung oder Richtlinie, kann aber als niedrigschwelliger Lernpfad und Orientierung für die sichere KI-Nutzung dienen.
 
 ---
 
@@ -115,53 +119,86 @@ Datenschutz war die größte Hürde in der Umfrage. Diese Ampel hilft dir, **in 
 
 ---
 
-## 6. Typische Use Cases aus der Abteilung
+## 6. Quellenbasierte Leitprinzipien (DSK)
+
+Die **Datenschutzkonferenz (DSK)** – das Gremium der deutschen Datenschutz-Aufsichtsbehörden – nennt in ihrer Orientierungshilfe „Künstliche Intelligenz und Datenschutz" konkrete Prüfpunkte. Diese sechs Leitprinzipien machen die Ampel oben fachlich belastbar:
+
+| Prinzip | Was es bedeutet |
+|---|---|
+| **1. Zweck vorher klären** | Lege fest, *wofür* du KI einsetzt, bevor du startest. Keine Eingabe „auf gut Glück". |
+| **2. Personenbezug prüfen** | Enthält der Input Daten, die auf eine Person rückführbar sind? Dann besondere Vorsicht. |
+| **3. Rechtsgrundlage** | Bei personenbezogenen Daten braucht es eine Rechtsgrundlage – im Zweifel Datenschutz fragen. |
+| **4. Richtigkeit prüfen** | KI-Ausgaben können falsch sein. Ergebnisse vor Verwendung kontrollieren. |
+| **5. Diskriminierung vermeiden** | KI kann verzerrte Ergebnisse liefern. Besonders kritisch bei Entscheidungen über Menschen. |
+| **6. Keine sensiblen Daten** | Besondere Datenkategorien (Gesundheit, Bonität, etc.) gehören nicht in öffentliche Tools. |
+
+> 📌 Die DSK betont: Einsatzfelder und Zwecke müssen **vor** der KI-Nutzung festgelegt werden. Für interne Wissenssysteme (RAG) gilt zusätzlich die DSK-RAG-Orientierungshilfe – hier ist die Bewertung immer einzelfallabhängig (Zugriffsrechte und Datenquellen prüfen).
+
+---
+
+## 7. Mini-Risiko-Check vor KI-Nutzung
+
+Stelle dir vor jeder KI-Nutzung diese fünf Fragen. **Schon ein „Ja" bedeutet: vorsichtig sein.**
+
+| Frage | Wenn ja → |
+|---|---|
+| Enthält der Input Personen-, Kunden- oder Vertragsdaten? | **Nicht** in öffentliche KI-Tools eingeben. |
+| Geht es um interne Zahlen, Strategien oder Forecasts? | Nur freigegebene interne Tools nutzen. |
+| Betrifft das Ergebnis Menschen direkt (Kunden, Schuldner, Mitarbeitende)? | Fachliche Prüfung + Compliance/Datenschutz einbeziehen. |
+| Wird KI zur **Entscheidung** statt nur zur Unterstützung genutzt? | Höheres Risiko – nicht eigenständig entscheiden (DSGVO Art. 22). |
+| Wird ein internes Wissenssystem / RAG genutzt? | Zugriffsrechte und Datenquellen prüfen. |
+
+> 🧭 Dieser Check ergänzt die Ampel: Die Ampel sagt *was* rein darf, der Risiko-Check *wann du jemanden einbeziehen solltest*.
+
+---
+
+## 8. Typische Use Cases aus der Abteilung
 
 Sortiert nach Häufigkeit in der Umfrage. Jeder Use Case folgt demselben Muster: **Wofür geeignet? · Worauf achten? · Beispielprompt.**
 
-### 6.1 Recherche & Zusammenfassen (83 %)
+### 8.1 Recherche & Zusammenfassen (83 %)
 
 - **Wofür geeignet:** öffentliche Themen verständlich erklären, lange Texte zusammenfassen.
 - **Worauf achten:** nur öffentliche/allgemeine Texte. Für interne Dokumente → M365 Copilot.
 - **Beispielprompt:**
   `Fasse die wichtigsten Punkte in 5 Stichpunkten zusammen: [Text ohne sensible Daten]`
 
-### 6.2 Übersetzungen (67 %)
+### 8.2 Übersetzungen (67 %)
 
 - **Wofür geeignet:** schnelle Übersetzungen in passendem, professionellem Ton.
 - **Worauf achten:** Kundenbriefe mit echten Daten nur über DeepL Business / M365 Copilot.
 - **Beispielprompt:**
   `Übersetze ins Englische, professioneller, formeller Ton: [Text ohne sensible Daten]`
 
-### 6.3 Ideen & Brainstorming (67 %)
+### 8.3 Ideen & Brainstorming (67 %)
 
 - **Wofür geeignet:** Ideen, Gliederungen, mögliche Rückfragen sammeln.
 - **Worauf achten:** keine vertraulichen Projektdetails oder echten Zahlen nennen.
 - **Beispielprompt:**
   `Gib mir 10 pragmatische Ideen für [allgemeines Thema].`
 
-### 6.4 Texte schreiben & überarbeiten (50 %)
+### 8.4 Texte schreiben & überarbeiten (50 %)
 
 - **Wofür geeignet:** E-Mails, Notizen, interne Texte, Formulierungen.
 - **Worauf achten:** keine echten Namen/Kundendaten – Platzhalter nutzen. Du verantwortest den Inhalt.
 - **Beispielprompt:**
   `Formuliere diesen Text klarer und professioneller. Kürze ihn auf maximal 120 Wörter: [Text ohne sensible Daten]`
 
-### 6.5 E-Mail & Kommunikation (33 %)
+### 8.5 E-Mail & Kommunikation (33 %)
 
 - **Wofür geeignet:** Vorlagen, Toncheck, höfliche Formulierungen.
 - **Worauf achten:** Ersatz-Personen nutzen – statt „Frau Müller, Firma ABC" → „eine verärgerte Kundin zur Vertragslaufzeit".
 - **Beispielprompt:**
   `Ist der Ton dieser E-Mail angemessen? Was würdest du ändern? [Text ohne echte Daten]`
 
-### 6.6 Datenanalyse & Auswertung (33 %)
+### 8.6 Datenanalyse & Auswertung (33 %)
 
 - **Wofür geeignet:** Muster in aggregierten Zahlen erkennen, Vergleichstabellen erstellen.
 - **Worauf achten:** keine echten Kunden-/Umsatz-/Mitarbeiterdaten. Für echte interne Daten → M365 Copilot in Excel.
 - **Beispielprompt:**
   `Welche Muster fallen auf? [aggregierte/anonymisierte Zahlen]`
 
-### 6.7 EOS-/Forderungsnahe Beispiele (immer anonymisiert)
+### 8.7 EOS-/Forderungsnahe Beispiele (immer anonymisiert)
 
 - **Wofür geeignet:** Kommunikation entschärfen, Regulatorik verstehen, Prozesse strukturieren.
 - **Worauf achten:** Bonitäts-/Scoring-Daten und echte Schuldnerdaten gehören **nie** in öffentliche KI-Tools.
@@ -170,7 +207,7 @@ Sortiert nach Häufigkeit in der Umfrage. Jeder Use Case folgt demselben Muster:
 
 ---
 
-## 7. Prompting einfach erklärt
+## 9. Prompting einfach erklärt
 
 Du brauchst keine Theorie – nur **3 Prinzipien**:
 
@@ -186,7 +223,7 @@ Du brauchst keine Theorie – nur **3 Prinzipien**:
 
 ---
 
-## 8. Prompt-Vorlagen zum Kopieren
+## 10. Prompt-Vorlagen zum Kopieren
 
 Direkt einsetzbar – ersetze nur den Platzhalter in eckigen Klammern:
 
@@ -205,7 +242,7 @@ Direkt einsetzbar – ersetze nur den Platzhalter in eckigen Klammern:
 
 ---
 
-## 9. KI-Ergebnisse prüfen: Checkliste
+## 11. KI-Ergebnisse prüfen: Checkliste
 
 KI **halluziniert** – sie erfindet überzeugend klingende, falsche Inhalte. Deshalb gilt im Arbeitskontext:
 
@@ -214,11 +251,12 @@ KI **halluziniert** – sie erfindet überzeugend klingende, falsche Inhalte. De
 - [ ] **Keine blinde Übernahme:** Das Ergebnis ist ein Entwurf, kein fertiges Resultat.
 - [ ] **Verantwortung:** Du haftest für alles unter deinem Namen – auch für KI-Output.
 - [ ] **Besonders kritisch** bei externen oder sensiblen Inhalten.
-- [ ] **Kennzeichnung:** KI-generierte Inhalte ggf. als solche markieren (EU AI Act, ab 08/2026).
+
+> 🏷️ **Transparenzpflicht (EU AI Act, Art. 50, ab 02.08.2026):** Nicht jede KI-Formulierung muss gekennzeichnet werden. Relevant sind vor allem **Chatbots, Deepfakes sowie synthetische Audio-, Bild- und Video­inhalte** und bestimmte KI-generierte Veröffentlichungen. Ein freiwilliger Code of Practice der EU-Kommission unterstützt die Umsetzung.
 
 ---
 
-## 10. Grenzen, offene Fragen und Ansprechpartner
+## 12. Grenzen, offene Fragen und Ansprechpartner
 
 **Bei diesen Fragen nicht selbst entscheiden** – immer nachfragen:
 
@@ -241,11 +279,27 @@ KI **halluziniert** – sie erfindet überzeugend klingende, falsche Inhalte. De
 
 ---
 
-## 11. Quellen- und Statushinweis
+## 13. Quellen- und Statushinweis
 
 > 📄 Diese Orientierungshilfe basiert auf der internen KI-Nutzungsumfrage (Juni 2026, 6 Teilnehmende), den öffentlichen EOS-DSGVO-Informationen, dem Otto-Group-CDR-Rahmen und dem EU AI Act.
 >
+> Zusätzlich orientiert sich dieses Dokument an der **DSK-Orientierungshilfe „Künstliche Intelligenz und Datenschutz"**, am **EU AI Act** einschließlich der EU-Hinweise zu **AI Literacy**, an praxisorientierten **Bitkom-Leitfäden** zu KI & Datenschutz sowie an **BSI-Veröffentlichungen** zur sicheren Nutzung generativer KI.
+>
 > **Sie ersetzt keine verbindlichen EOS-Richtlinien.** Verbindliche Regeln geben ausschließlich IT, Compliance und Datenschutz. Stand: Juni 2026.
+
+### Quellenverzeichnis
+
+| # | Quelle | Rolle |
+|---|---|---|
+| 1 | **DSK – Orientierungshilfe „KI und Datenschutz"** (06.05.2024) | Hauptquelle Datenschutz: Zweckbindung, Personenbezug, Richtigkeit, Diskriminierung |
+| 2 | **EU AI Act** + EU-Leitlinien zur Systemdefinition | Rechtlicher Rahmen, Transparenzpflichten (Art. 50) |
+| 3 | **EU-Kommission – AI Literacy FAQ** (Art. 4, seit 02.02.2025) | Begründung des Lernpfads / KI-Kompetenz |
+| 4 | **Bitkom – „KI & Datenschutz – Praxisleitfaden 2.0"** (2025) | Praxis-Checklisten, Unternehmenssprache (nicht amtlich) |
+| 5 | **BSI – Veröffentlichungen zu generativer KI** | Informationssicherheit, Prompt Injection, sichere Tool-Nutzung |
+| 6 | **EDPS – Risk Management Guidance** (11.11.2025) | Ergänzende Risiko-Checkliste (optional) |
+| 7 | **UNESCO – Empfehlung zur Ethik der KI** | Ethik-Leitbild: Fairness, Transparenz, menschliche Aufsicht |
+
+> ⚖️ **Gewichtung:** Pflichtquellen = DSK, EU AI Act, EU AI Literacy, Bitkom, BSI. Ergänzungsquellen = EDPS, UNESCO.
 
 ---
 

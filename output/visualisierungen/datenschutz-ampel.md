@@ -4,6 +4,11 @@
 
 ## Grafik
 
+![Datenschutz-Ampel](png/datenschutz-ampel.png)
+
+<details>
+<summary>Mermaid-Version (interaktiv in VS Code/GitHub)</summary>
+
 ```mermaid
 flowchart TD
     classDef gruen fill:#d5e8d4,stroke:#82b366,color:#000
@@ -31,6 +36,8 @@ flowchart TD
         GRUEN["🟢 GRÜN – Unkritisch nutzbar<br/>allgemeine Fragen · öffentliche Infos<br/>fiktive Beispiele · Texte ohne Personenbezug<br/>Gliederungen · Formulierungshilfen"]:::gruen
     end
 ```
+
+</details>
 
 ## Interpretation
 

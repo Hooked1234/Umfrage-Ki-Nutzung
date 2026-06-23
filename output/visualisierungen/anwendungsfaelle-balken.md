@@ -4,6 +4,11 @@
 
 ## Grafik
 
+![Anwendungsfälle nach Häufigkeit](png/anwendungsfaelle-balken.png)
+
+<details>
+<summary>Mermaid-Version (interaktiv in VS Code/GitHub)</summary>
+
 ```mermaid
 ---
 config:
@@ -17,6 +22,8 @@ xychart-beta
     y-axis "Anteil in %" 0 --> 100
     bar [83, 67, 67, 50, 33, 33]
 ```
+
+</details>
 
 ### Werte als Tabelle
 

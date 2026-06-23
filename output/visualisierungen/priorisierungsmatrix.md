@@ -4,6 +4,11 @@
 
 ## Grafik
 
+![Priorisierungsmatrix](png/priorisierungsmatrix.png)
+
+<details>
+<summary>Mermaid-Version (interaktiv in VS Code/GitHub)</summary>
+
 ```mermaid
 quadrantChart
     title Nutzen vs. Einstiegsaufwand für KI-Anwendungen
@@ -22,6 +27,8 @@ quadrantChart
     "Datenanalyse": [0.70, 0.75]
     "Bildgenerierung": [0.55, 0.30]
 ```
+
+</details>
 
 ### Einordnung
 

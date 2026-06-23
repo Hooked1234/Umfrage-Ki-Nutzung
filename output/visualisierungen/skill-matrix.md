@@ -4,6 +4,11 @@
 
 ## Grafik
 
+![Skill-Matrix](png/skill-matrix.png)
+
+<details>
+<summary>Mermaid-Version (interaktiv in VS Code/GitHub)</summary>
+
 ```mermaid
 quadrantChart
     title Wissensstand vs. Anwendungssicherheit (je 1-5)
@@ -20,6 +25,8 @@ quadrantChart
     "Person 5": [0.80, 1.0]
     "Person 6": [0.40, 0.60]
 ```
+
+</details>
 
 ### Datenbasis
 
