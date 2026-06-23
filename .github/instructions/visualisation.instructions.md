@@ -61,8 +61,7 @@ Jede Visualisierung in einer eigenen `.md`-Datei unter `output/visualisierungen/
 
 | Grafik | Dateiname |
 |---|---|
-| Lernpfad Flowchart | `lernpfad-flowchart.md` |
-| Lernwünsche Balken | `lernwuensche-balken.md` |
+| Datenschutz-Ampel | `datenschutz-ampel.md` |
+| Anwendungsfälle Balken | `anwendungsfaelle-balken.md` |
 | Skill-Matrix | `skill-matrix.md` |
 | Priorisierungsmatrix | `priorisierungsmatrix.md` |
-| Tool-Nutzung Heatmap | `tool-nutzung-heatmap.md` |

@@ -16,52 +16,30 @@ Lies vor dem Erstellen von Visualisierungen:
 
 ## Visualisierungen
 
-### 1. Lernpfad-Flowchart (Mermaid)
+### 1. Datenschutz-Ampel (Tabelle/Grafik)
 
-Erstelle einen Flowchart des Lernpfads mit Mermaid:
-
-```mermaid
-flowchart TD
-    A[🎯 Einstieg] --> B[Stufe 1: Grundlagen]
-    B --> C[Modul 1.1: Was ist KI?]
-    B --> D[Modul 1.2: Datenschutz]
-    ...
-```
-
-- Knoten = Module
-- Farben: Blau für Grundlagen, Grün für Anwendung, Orange für Vertiefung
-- Speichern als: `output/visualisierungen/lernpfad-flowchart.md`
+Die wichtigste Visualisierung – Datenschutz war die größte Umfrage-Hürde:
+- Drei Bereiche: 🟢 Grün (unkritisch), 🟡 Gelb (mit Vorsicht), 🔴 Rot (nie in öffentliche Tools)
+- Klar lesbare Tabelle oder farbcodierte Übersicht
+- Inhalte aus `ki-datenschutz-guide.md`
+- Speichern als: `output/visualisierungen/datenschutz-ampel.md`
 
 ### 2. Balkendiagramm: Meistgewünschte Themen
 
-Basierend auf Lernwünschen aus der Umfrage:
-- X-Achse: Themen
-- Y-Achse: Anzahl Nennungen
-- Beschriftung: Absolut und prozentual
-- Speichern als: `output/visualisierungen/lernwuensche-balken.md`
+### 2. Balkendiagramm: Anwendungsfälle nach Häufigkeit
 
-### 3. Skill-Matrix: Wissensstand × Interesse
+Basierend auf den genutzten Anwendungsfällen aus der Umfrage:
+- X-Achse: Anwendungsfälle (Recherche, Übersetzung, Ideen, Texte, Kommunikation, Datenanalyse)
+- Y-Achse: Anzahl Nennungen / Prozent
+- Werte aus `output/analyse.md`: Recherche 83 %, Übersetzung 67 %, Ideen 67 %, Texte 50 %, Kommunikation 33 %, Datenanalyse 33 %
+- Speichern als: `output/visualisierungen/anwendungsfaelle-balken.md`
 
-Tabellarische Matrix:
-- Zeilen: Themen / Fähigkeiten
-- Spalten: Wissensstand (0–5) und Lerninteresse (hoch/mittel/niedrig)
-- Farbkodierung: Rot = Lücke + hohes Interesse (Priorität), Grün = vorhanden
-- Speichern als: `output/visualisierungen/skill-matrix.md`
+### 3. Priorisierungsmatrix: Nutzen × Aufwand
 
-### 4. Priorisierungsmatrix: Nutzen × Aufwand
-
-2×2-Matrix für Lernthemen:
-- Achsen: Nutzen für Alltag (hoch/niedrig) × Lernaufwand (hoch/niedrig)
+2×2-Matrix für KI-Anwendungen im Arbeitsalltag:
+- Achsen: Nutzen für Alltag (hoch/niedrig) × Einstiegsaufwand (hoch/niedrig)
 - Quadranten: Quick Wins | Strategische Projekte | Füllthemen | Vermeiden
 - Speichern als: `output/visualisierungen/priorisierungsmatrix.md`
-
-### 5. Heatmap: Tool-Nutzung nach Anwendungsfall
-
-Matrix aus Umfragedaten:
-- Zeilen: KI-Tools (ChatGPT, Copilot, etc.)
-- Spalten: Anwendungsfälle (Texte, Recherche, Übersetzung, etc.)
-- Intensität: Nutzungshäufigkeit
-- Speichern als: `output/visualisierungen/tool-nutzung-heatmap.md`
 
 ## Mermaid-Vorlage für Flowcharts
 

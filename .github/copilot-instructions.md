@@ -5,13 +5,21 @@
 Dieses Projekt wertet eine interne KI-Nutzungsumfrage der Finanzabteilung aus (6 Teilnehmende, Juni 2026).
 Das Ziel ist ein praxisorientiertes Lernpfad-Dokument, das Mitarbeitenden zeigt, wie sie KI-Tools sicher und effektiv im Arbeitsalltag einsetzen können.
 
+## Ziel des Dokuments
+
+Ein **kompaktes internes Hilfsdokument** zur KI-Nutzung in der Finanzabteilung.
+
+> Dieses Dokument dient als praktische Orientierung zur sicheren und sinnvollen KI-Nutzung im Arbeitsalltag. Es basiert auf einer internen Umfrage und zeigt typische Anwendungsfälle, Grundregeln zum Datenschutz sowie direkt nutzbare Prompt-Beispiele. Es ersetzt keine verbindlichen Vorgaben von IT, Datenschutz oder Compliance.
+
+**Kein mehrstufiger Lernpfad** – stattdessen ein Nachschlagewerk, das sofort brauchbar ist.
+
 ## Kernziele
 
-1. **Umfragedaten analysieren** – Wissensstand, Nutzungsverhalten, Lernbedarf und Priorisierung
-2. **Umfrageergebnisse bewerten** – Themen, Qualität und didaktische Eignung einschätzen
-3. **Lernpfad entwerfen** – Stufenweiser, auf den Bedarf zugeschnittener Lernpfad
-4. **Dokument schreiben** – Verständliches Lern- und Hilfedokument auf Deutsch
-5. **Visualisieren** – Charts, Diagramme und strukturierte Grafiken
+1. **Datenschutz-Klarheit** – Was darf rein, was nicht? Früh und konkret (Ampel-Modell)
+2. **Anwendungssicherheit stärken** – Vertrauen in korrektes Handeln, nicht mehr Theorie
+3. **Sofort nutzbare Prompts** – Vorlagen zum Kopieren, keine Einleitung nötig
+4. **Bestehende Inhalte konsolidieren** – `ki-datenschutz-guide.md` + `ki-use-cases.md` zusammenführen
+5. **Visualisierungen** – Ampel-Grafik, Priorisierungsmatrix, Nutzungsübersicht
 
 ## Sprache und Ton
 
@@ -32,11 +40,11 @@ output/visualisierungen/  → Charts und Diagramme
 
 | Agent | Datei | Zweck |
 |-------|-------|-------|
-| Data Analyst | (MCP: pandas-mcp-server) | Umfragedaten auswerten |
-| Survey Evaluator | `.github/agents/survey-evaluator.agent.md` | Ergebnisse bewerten |
-| Learning Path Designer | `.github/agents/learning-path-designer.agent.md` | Lernpfad entwerfen |
-| Technical Writer | `.github/agents/technical-writer.agent.md` | Dokument schreiben |
-| Information Designer | `.github/agents/information-designer.agent.md` | Visualisierungen erstellen |
+| Survey Evaluator | `.github/agents/survey-evaluator.agent.md` | Umfrage auswerten → `output/analyse.md` ✅ bereits erstellt |
+| Technical Writer | `.github/agents/technical-writer.agent.md` | Gesamtdokument schreiben → `output/KI-Orientierungshilfe.md` |
+| Information Designer | `.github/agents/information-designer.agent.md` | Visualisierungen → `output/visualisierungen/` |
+
+> **Reihenfolge:** Survey Evaluator → Technical Writer → Information Designer
 
 ## MCP-Server
 
